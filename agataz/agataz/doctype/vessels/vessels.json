@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:vessel_name",
+ "creation": "2025-03-26 01:23:57.683529",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vessel_name",
+  "imo_number",
+  "flag",
+  "port",
+  "customer"
+ ],
+ "fields": [
+  {
+   "fieldname": "vessel_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vessel Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "imo_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "IMO Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "flag",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Flag",
+   "options": "Flag",
+   "reqd": 1
+  },
+  {
+   "fieldname": "port",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Port",
+   "options": "Port",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-26 03:07:23.120513",
+ "modified_by": "Administrator",
+ "module": "Agataz",
+ "name": "Vessels",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
