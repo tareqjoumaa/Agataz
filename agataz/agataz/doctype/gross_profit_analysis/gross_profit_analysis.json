@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-28 15:52:45.889434",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_invoice",
+  "sales_invoice_items",
+  "invoice_total",
+  "purchase_invoice_items",
+  "purchase_total",
+  "profit_summary_section",
+  "gross_profit"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "depends_on": "sales_invoice",
+   "fieldname": "profit_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Profit Summary"
+  },
+  {
+   "fieldname": "gross_profit",
+   "fieldtype": "Currency",
+   "label": "Gross Profit"
+  },
+  {
+   "fieldname": "sales_invoice_items",
+   "fieldtype": "Table",
+   "label": "Sales Invoice Items",
+   "options": "Sales Invoice Items profit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_invoice_items",
+   "fieldtype": "Table",
+   "label": "Purchase Invoice items",
+   "options": "Purchase Invoice items profit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_total",
+   "fieldtype": "Currency",
+   "label": "Invoice Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_total",
+   "fieldtype": "Currency",
+   "label": "Purchase Total",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-28 17:58:50.065395",
+ "modified_by": "Administrator",
+ "module": "Agataz",
+ "name": "Gross Profit Analysis",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
